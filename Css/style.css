@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: vasir;
+    direction: rtl;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #262626;
+    overflow: hidden;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    text-align: center;
+    padding: 20px;
+    font-size: 35px;
+    color: white;
+    text-shadow: 3px 3px 30px white;
+    pointer-events: none;
+}
+
+.Input-Box{
+    width: 300px;
+    position: relative;
+    display: flex;
+}
+
+.Input-Box input{
+    width: 100%;
+    /*padding: 10px;*/
+    height: 50px;
+    border-radius: 10px;
+    background-color: #636460;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 19px;
+    box-shadow: 3px 3px 30px gray;
+}
+
+.Input-Box span{
+    position: absolute;
+    right: 0;
+    pointer-events: none;
+    transition: .5s all;
+    transform: translateX(-10px);
+    padding: 5px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.Input-Box input:focus ~ span,.Input-Box input:valid ~ span{
+    color: #98ffe0;
+    transform: translateY(-10px) translateX(-10px);
+    font-size: 14px;
+}
+
+button{
+    width: 250px;
+    height: 35px;
+    background-color: green;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    color: white;
+    margin-right: 25px;
+    cursor: pointer;
+    transition: .3s all;
+}
+
+button:hover{
+    box-shadow: 3px 3px 10px #18ff4f;
+    background-color: #18ff4f;
+    font-size: 21px;
+}
